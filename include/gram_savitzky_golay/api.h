@@ -29,7 +29,7 @@
 #  endif // __GNUC__ >= 4
 #endif // defined _WIN32 || defined __CYGWIN__
 
-#ifdef GRAM_SAVITZKY_GOLAY_STATIC
+#if defined(GRAM_SAVITZKY_GOLAY_STATIC) || defined(BUILD_MONOLITHIC)
 // If one is using the library statically, get rid of
 // extra information.
 #  define GRAM_SAVITZKY_GOLAY_DLLAPI
